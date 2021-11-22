@@ -1,0 +1,16 @@
+body{
+    background-color: #fff;
+}
+h1{
+    color: cornflowerblue;
+    font-family: Verdana;
+    font-size: 300%;
+}
+p{
+    color: rgb(141, 19, 94);
+    font-family:  courier;
+    font-size: 160%;
+    border: 5px solid powderblue;   
+    padding: 30px;
+    margin: 100px;
+}
