@@ -1,0 +1,14 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+.face-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 5px;
+
+}
+.face-gallery img{
+    /* 화면이 빈공간없이 채워짐 */
+    min-width: 100%;
+}

@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    color:  #222;
+}
+
+/* Best Seller */
+
+.container {
+    height: 100vh;
+    display: grid;
+    /* 수평정렬 */
+    justify-items: center;
+    /* 수직정렬 */
+    align-items: center;
+}
+
+.best-seller {
+    /* border: 10px solid #000; */
+    width: 1230px;
+    box-shadow: 0 0 30 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+.best-header {
+    font-size: 22px;
+    padding-left: 0px;
+}
+
+.items-inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 15px;
+    /* 커서를 가져다 대면 누르기 표시 */
+    cursor: pointer;
+}
+
+.name span{
+    display: block;
+    color: royalblue;
+}
+
+/* 커서를 가져다 대면 글자가 빨간색으로 변경 */
+.item:hover .name{
+    color: red;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width:1024px){
+    .containter{
+        align-items: start;
+
+    }
+    .best-seller{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+
+    }
+    .items-inner{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width:767px){
+    .containter{
+        align-items: start;
+    }
+    .best-seller{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .items-inner{
+        grid-template-columns: 1fr;
+    }
+}
