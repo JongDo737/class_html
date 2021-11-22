@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            width: 600px;
+            height: 200px;
+            background-color: khaki;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: hotpink;
+        }
+
+        .parent div:nth-child(2) {
+
+            /* 자식요소 너비 값과 높이 값이 없는 경우
+            좌우 상하로 가득 채움  */
+            justify-self: stretch;
+            align-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>

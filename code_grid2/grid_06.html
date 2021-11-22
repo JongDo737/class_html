@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            background-color: khaki;
+            height: 300px;
+            display: grid;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .parent div {
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #000;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .parent div.item1 {
+            background-color: crimson;
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        .parent div.item2 {
+            background-color: yellowgreen;
+            grid-row: 1 / span 2;
+        }
+
+        .parent div.item5 {
+            background-color: violet;
+            grid-column: 1 / span 3;
+            /* 마지막 가로(row) 이므로 
+            생략 가능 */
+            grid-row: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+
+</html>

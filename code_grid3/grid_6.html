@@ -8,17 +8,22 @@
     <title>Document</title>
     <style>
         .parent {
+            border: 5px solid #000;
+            background-color: khaki;
             display: grid;
-            border: 5px solid #333;
-            background-color: #a29bfe;
-            /* grid-template-columns: repeat(3, 1fr); */
-            grid-template-columns: 1fr minmax(200px, auto) 1fr;
+            grid-template-areas: 'item1 item1 item1 item1 item1';
         }
 
         .parent div {
-            border-radius: 5px;
-            margin: 10px;
-            background-color: #fff;
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #000;
+        }
+
+        .parent div.item {
+            background-color: crimson;
+            grid-area: item1;
+            grid-row: 1;
         }
     </style>
 </head>
@@ -30,9 +35,8 @@
         <div>3</div>
         <div>4</div>
         <div>5</div>
-        <div>6</div>
+        <div class="item">6</div>
     </div>
-
 </body>
 
 </html>

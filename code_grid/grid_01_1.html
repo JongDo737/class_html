@@ -8,29 +8,30 @@
     <title>Document</title>
     <style>
         .parent {
-            border: 1px solid #333;
-            width: 700px;
-            background-color: #a29bef;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-            gap: 10px;
+            display: inline-grid;
+            border: 5px solid #000;
         }
 
         .parent div {
-            border-radius: 5px;
-            margin: 10px;
-            background-color: #fff;
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            padding: 0 20px;
+            border: 1px solid #fff;
+            background-color: yellowgreen;
         }
     </style>
 </head>
 
 <body>
+
     <div class="parent">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
+        <div>5</div>
+        <div>6</div>
     </div>
 
 </body>

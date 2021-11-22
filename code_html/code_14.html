@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: red;
+
+        }
+
+        .container {
+            background-color: yellow;
+            left: 20px;
+            top: 20px;
+            /* satic html 에 정의된 순서대로 자연스럽게 
+            보여지게 하는 속성 */
+            /* position: static; */
+            position: relative;
+
+        }
+
+        .box {
+            background-color: blue;
+            /* 2 단계 */
+            left: 20px;
+            top: 0;
+
+
+            /* position 변경 */
+            /* position: relative; */
+            /* 원래 있어야 하는 자리에서 20px 옮겨 갔음. */
+
+            /* position: absolute; */
+            /* 부모 박스(상자) 기준으로 left 20px, top 20px 옮겨 갔다   */
+
+            /* position: fixed; */
+            /* 부모 박스를 나와서 최상단 페이지 기준으로 left 20px, top 20px  */
+
+            /* static + scroll */
+            position: sticky;
+            /* 원래 있어야 하는 자리에 있는데 스크롤링 하면 변하지 않고
+            계속 붙어 있는 역활을 한다. */
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div></div>
+        <div class="box">I'm Box</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>

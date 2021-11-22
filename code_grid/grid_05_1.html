@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 5px dashed #000;
+            width: 800px;
+            height: 200px;
+            display: grid;
+            background-color: lightcyan;
+            grid-template-columns: auto auto;
+            /* 각자의 컬럼 내에서 !!! 
+            수평으로 정렬
+            */
+            /* 기본값  */
+            /* justify-items: start; */
+
+            /* justify-items: center; */
+
+            justify-items: end;
+
+        }
+
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: darkkhaki;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>

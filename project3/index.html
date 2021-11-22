@@ -6,23 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            height: 150vh;
+            height: 100vh;
             margin: 0;
             background-color: #eee;
         }
 
+
         .container {
+            /* height: 100vh; */
             display: grid;
             align-content: center;
             margin: 0px 20px;
-            /* height: 100vh; */
         }
 
         .heading {
-            font-style: 42px;
+            font-size: 42px;
             font-weight: 600;
             text-align: center;
             padding-bottom: 40px;
@@ -48,48 +48,40 @@
 
         .item1 {
             grid-area: item1;
-            cursor: pointer;
         }
 
         .item2 {
             grid-area: item2;
-            cursor: pointer;
         }
 
         .item3 {
             grid-area: item3;
-            cursor: pointer;
         }
 
         .item4 {
             grid-area: item4;
-            cursor: pointer;
         }
 
         .item5 {
             grid-area: item5;
-            cursor: pointer;
         }
 
         .item6 {
             grid-area: item6;
-            cursor: pointer;
         }
 
         .item7 {
             grid-area: item7;
-            cursor: pointer;
         }
 
         .item8 {
             grid-area: item8;
-            cursor: pointer;
         }
 
         .item9 {
             grid-area: item9;
-            cursor: pointer;
         }
+
 
         /* Tablet layout 768 and 1024 */
         @media (min-width: 768px) and (max-width: 1024px) {
@@ -108,14 +100,14 @@
             }
         }
 
-
-        /* Mobile layout max-width 767 */
+        /* Mobile Layout max-width 767px */
         @media (max-width: 767px) {
             .container {
                 align-content: start;
             }
 
             .focus {
+                display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-areas:
                     'item1 item1'
@@ -135,17 +127,19 @@
         <h1 class="heading">Grid Gallery</h1>
 
         <section class="focus">
-            <div class="item1"><img src="images/blog-post-01.jpg" alt="블로그포스트1"></div>
-            <div class="item2"><img src="images/blog-post-02.jpg" alt="블로그포스트2"></div>
-            <div class="item3"><img src="images/blog-post-03.jpg" alt="블로그포스트3"></div>
-            <div class="item4"><img src="images/blog-post-04.jpg" alt="블로그포스트4"></div>
-            <div class="item5"><img src="images/blog-post-05.jpg" alt="블로그포스트5"></div>
-            <div class="item6"><img src="images/blog-post-06.jpg" alt="블로그포스트6"></div>
-            <div class="item7"><img src="images/blog-post-07.jpg" alt="블로그포스트7"></div>
-            <div class="item8"><img src="images/blog-post-08.jpg" alt="블로그포스트8"></div>
-            <div class="item9"><img src="images/blog-post-09.jpg" alt="블로그포스트9"></div>
+            <div class="item1"><img src="images/blog-post-01.jpg" alt=""></div>
+            <div class="item2"><img src="images/blog-post-02.jpg" alt=""></div>
+            <div class="item3"><img src="images/blog-post-03.jpg" alt=""></div>
+            <div class="item4"><img src="images/blog-post-04.jpg" alt=""></div>
+            <div class="item5"><img src="images/blog-post-05.jpg" alt=""></div>
+            <div class="item6"><img src="images/blog-post-06.jpg" alt=""></div>
+            <div class="item7"><img src="images/blog-post-07.jpg" alt=""></div>
+            <div class="item8"><img src="images/blog-post-08.jpg" alt=""></div>
+            <div class="item9"><img src="images/blog-post-09.jpg" alt=""></div>
         </section>
+
     </div>
+
 </body>
 
 </html>

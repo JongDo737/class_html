@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .frame {
+            display: grid;
+            gap: 10px;
+            height: 100vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                'one two two'
+                'one five three'
+                'four four three'
+            ;
+        }
+
+        .frame div {
+            background-color: gold;
+            padding: 20px;
+            border: 1px solid #000;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        .one {
+            grid-area: one;
+            display: grid;
+            grid-template-areas:
+                'one-sub1 one-sub2'
+                'one-sub3 one-sub3'
+            ;
+        }
+
+        .two {
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: three;
+        }
+
+        .four {
+            grid-area: four;
+        }
+
+        .five {
+            grid-area: five;
+        }
+
+        .one div {
+            background-color: skyblue;
+            color: aliceblue;
+            justify-self: stretch;
+            align-self: stretch;
+            margin: 0px;
+        }
+
+        .one div:nth-child(1) {
+            grid-area: one-sub1;
+        }
+
+        .one div:nth-child(2) {
+            grid-area: one-sub2;
+        }
+
+        .one div:nth-child(3) {
+            grid-area: one-sub3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="one">
+            <div class="one-sub1">1</div>
+            <div class="one-sub2">2</div>
+            <div class="one-sub3">3</div>
+        </div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            border: 5px solid #000;
+            background-color: deepskyblue;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            /* 자식요소를 수평으로 정렬 */
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+
+            /* 자식 요소를 수평으로 양쪽 정렬 */
+            /* justify-content: space-around; */
+
+            /* 자식 요소를 수평으로 양쪽 정렬 (
+                첫번째 컬럼과 마지막 컬럼은 양끝에 여백
+                없이 붙음 
+            ) */
+            justify-content: space-between;
+
+
+
+        }
+
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: gold;
+            width: 100px;
+            padding: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>
